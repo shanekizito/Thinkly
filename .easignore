@@ -1,0 +1,60 @@
+# Ignore node_modules (EAS installs them from package.json)
+node_modules
+
+# Ignore local build artifacts
+*.apk
+*.aab
+*.ipa
+*.tar.gz
+*.tgz
+*.zip
+build
+dist
+ios/build
+.web-build
+
+# IDE/editor settings
+.vscode
+.idea
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs and temp files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.tmp
+tmp/
+temp/
+
+# Test files
+__tests__/
+coverage/
+jest.config.js
+*.test.js
+*.spec.js
+*.test.ts
+*.spec.ts
+*.test.tsx
+*.spec.tsx
+
+# Assets not needed for production
+*.psd
+*.ai
+*.sketch
+*.xcf
+assets/raw/         # if you store heavy raw files like videos/images there
+
+# Firebase or Google service credentials (should be in secrets or configured via eas.json)
+.env
+.env.*
+
+# Expo Dev Client binaries
+*.apk
+*.aab
+*.keystore
+
+# Misc
+eject-output/

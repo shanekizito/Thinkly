@@ -1,0 +1,193 @@
+export const label = {
+    appName: `Thinkly`,
+
+    logIn: `Iniciar sesión`,
+    success: `Éxito`,
+    logedInMessage: `¡Has iniciado sesión!`,
+    cancel: `Cancelar`,
+    error: `Error`,
+    userNotFoundAfterLogin: `No se encontró ningún usuario después del inicio de sesión.`,
+    enterEmailForPasswordReset: `Por favor, introduce tu correo electrónico para restablecer tu contraseña.`,
+    passwordResetMailSent: `¡Correo de restablecimiento de contraseña enviado! Revisa tu bandeja de entrada.`,
+    ok: `OK`,
+    email: `Correo electrónico`,
+    password: `Contraseña`,
+    signInWith: `Iniciar sesión con`,
+    forgotPassword: `¿Olvidaste tu contraseña?`,
+    signUp: `Registrarse`,
+    allFieldsRequire: `Todos los campos son obligatorios.`,
+    accountCreated: `¡Cuenta creada!`,
+    signUpFailed: `Error al registrarse`,
+    name: `Nombre`,
+    alreadyHaveAnAccount: `¿Ya tienes una cuenta?`,
+
+    home: `Inicio`,
+    overview: `Resumen`,
+    profile: `Perfil`,
+
+    back: `Atrás`,
+    courseOverview: `Resumen del curso`,
+    ongoing: `En curso`,
+    completed: `Completado`,
+    continue: `Continuar`,
+    start: `Comenzar`,
+
+    enterTopic: `Por favor, introduce un tema`,
+    failedToSaveTopic: `No se pudo guardar el tema`,
+    customCourse: `Curso\nPersonalizado`,
+    customCoursePlaceholder: `¿Sobre qué quieres aprender?`,
+    createCourse: `Crear curso`,
+    creating: `Creando...`,
+
+    correct: `¡Correcto!`,
+    tryAgain: `Intentar de nuevo`,
+    youEarned: `Has ganado`,
+    theCorrectAnswerWas: `La respuesta correcta era`,
+    dayStreak: `días consecutivos`,
+    level: `Nivel`,
+    yourCourses: `Tus cursos`,
+    createNewCourse: `Crear nuevo curso`,
+    dailyChallenge: `Desafío diario`,
+
+    question: `Pregunta`,
+    incorrectAnswer: `Incorrecto. Respuesta`,
+    score: `Puntuación`,
+    loading: `Cargando...`,
+    completeLesson: `Completar lección`,
+    next: `Siguiente`,
+    congratulations: `¡Felicidades!`,
+    lessonComplete: `¡Lección completada!`,
+
+    subscriptionStatus: `Estado de la suscripción`,
+    stripPayment: `Pago con Stripe`,
+    yourPlanActivated: `Tu plan premium está activado.`,
+    premiumPlan: `Plan Premium`,
+    month: `mes`,
+    unlimitedCourses: `Cursos ilimitados`,
+    premiumBadges: `Insignias premium`,
+    processing: `Procesando...`,
+    payWith: `Pagar con`,
+
+    imagePickerError: `Error al seleccionar imagen`,
+    avatarUpdated: `¡Avatar actualizado (solo local)!`,
+    failedToUpdateAvatar: `No se pudo actualizar el avatar.`,
+    badges: `Insignias`,
+    noCourses: `Aún no hay cursos.`,
+    preferences: `Preferencias`,
+    notifications: `Notificaciones`,
+    theme: `Tema`,
+    language: `Idioma`,
+    logOut: `Cerrar sesión`,
+
+    settings: `Configuración`,
+    permissionRequired: `Permiso requerido`,
+    permissionRequiredDesc: `Por favor, habilita las notificaciones en la configuración`,
+    darkMode: `Modo oscuro`,
+    dailyReminders: `Recordatorios diarios`,
+    changeReminderTime: `Cambiar hora del recordatorio`,
+    done: `Hecho`,
+    sendTestNotification: `Enviar notificación de prueba`,
+
+    courseLimitReached: `Límite de cursos alcanzado`,
+    subscribeTo: `Suscríbete para crear cursos ilimitados`,
+    subscribe: `Suscribirse`,
+    whatDoYouWantToLearn: `¿Qué quieres aprender?`,
+    investing: `Inversiones`,
+    mentalHealth: `Salud mental`,
+    relationships: `Relaciones`,
+    other: `Otro`,
+
+    ongoingCourseLimitReached: `Límite de Cursos en Curso Alcanzado`,
+    ongoingCourseLimitReachedDesc: `Puedes tener hasta 3 cursos en curso al mismo tiempo. Para comenzar uno nuevo, completa primero uno de los actuales.`,
+
+    no: `No`,
+    yes: `Sí`,
+    removeCourse: `Eliminar curso`,
+    removeCourseDesc: `¿Estás seguro de que deseas eliminar`,
+    course: `curso`,
+
+    yourBadges: `Tus Insignias`,
+    yourBadgesDesc: `Gana insignias mientras aprendes, completas cursos y mantienes la constancia:`,
+    totalBadges: `Insignias Totales:`,
+    badgesObject: {
+        firstLesson: {
+            title: `Primera Lección`,
+            desc: `Completa tu\nprimera lección`,
+        },
+        streakStarter: {
+            title: `Inicio de Racha`,
+            desc: `Mantén una racha de\naprendizaje de 3 días`,
+        },
+        superLearner: {
+            title: `Súper Aprendiz`,
+            desc: `Termina 5\ncursos completos`,
+        },
+        curiousMind: {
+            title: `Mente Curiosa`,
+            desc: `Crea 3 cursos\npersonalizados`,
+        },
+        dedicated: {
+            title: `Dedicado`,
+            desc: `Racha de aprendizaje\nde 7 días`,
+        },
+        weekOne: {
+            title: `Primera Semana`,
+            desc: `Completa tu\nprimera semana`,
+        },
+    },
+
+    unsubscribePlan: `Darse de baja del plan actual`,
+    unsubscribePlanTitle: `Cancelar suscripción`,
+    unsubscribePlanDesc: `¿Está seguro de que desea darse de baja del plan actual?`,
+    unsubscribePlanSuccess: `Su suscripción se cancelará al final del período de facturación.`,
+    unsubscribePlanFailed: `No se pudo cancelar la suscripción.`,
+
+    allLessonsAreFinished: `¡Todas las lecciones están terminadas!`,
+    congratulationsYouEarnedNewBadge: `¡Felicidades! ¡Has ganado una nueva insignia!`,
+
+    courseGenerationMessages: {
+        short: [
+            `Preparando tu camino de aprendizaje personalizado…`,
+            `Por favor espera 20-30 segundos, tu nuevo viaje de aprendizaje estará listo pronto.`,
+            `No te preocupes, mientras esperas ¡te haces más sabio para el futuro!`,
+            `Solo tomará unos segundos pensar en grandes ideas…`,
+            `Estamos ensamblando tu curso personalizado, tomará solo un momento.`,
+            `Grandes ideas están en proceso, esto solo tomará un momento.`,
+            `Estamos creando tu curso con cuidado, ¡ya casi está!`,
+            `Ensamblando tu camino de aprendizaje único, ¡mantente atento!`,
+            `Tu curso está casi listo, las grandes cosas toman su tiempo.`
+        ],
+        medium: [
+            `Preparando tu camino de aprendizaje personalizado…`,
+            `Por favor espera 1-1.5 minutos, tu nuevo viaje de aprendizaje estará listo pronto.`,
+            `No te preocupes, mientras esperas ¡te haces más sabio para el futuro!`,
+            `Solo tomará unos segundos pensar en grandes ideas…`,
+            `Estamos ensamblando tu curso personalizado, tomará solo un momento.`,
+            `Grandes ideas están en proceso, esto solo tomará un momento.`,
+            `Estamos creando tu curso con cuidado, ¡ya casi está!`,
+            `Ensamblando tu camino de aprendizaje único, ¡mantente atento!`,
+            `Tu curso está casi listo, las grandes cosas toman su tiempo.`
+        ]
+    },
+
+    congratulationsLevelUp: `¡Has alcanzado un nuevo nivel! ¡Te estás volviendo cada vez más inteligente!`,
+    courseType: `Tipo de curso`,
+    short: `Corto`,
+    medium: `Medio`,
+    long: `Largo`,
+
+    noCourse: `Actualmente no hay cursos en tu lista.`,
+
+    courseLength: [
+        {
+            title: `Corto`,
+            desc: `4 lecciones`,
+            key: `short`,
+        },
+        {
+            title: `Medio`,
+            desc: `6 lecciones`,
+            key: `medium`,
+        },
+    ],
+}

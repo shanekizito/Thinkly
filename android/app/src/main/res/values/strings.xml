@@ -1,0 +1,7 @@
+<resources>
+  <string name="app_name">Thinkly</string>
+  <string name="expo_system_ui_user_interface_style" translatable="false">automatic</string>
+  <string name="facebook_app_id">738296122093162</string>
+  <string name="facebook_client_token">3e6aaccb31ff980f8911ed68b9d4a311</string>
+  <string name="fb_login_protocol_scheme">fb738296122093162</string>
+</resources>
