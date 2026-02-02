@@ -74,22 +74,68 @@ app/                # Navigation routes
 
 ## Getting Started
 
-1.  **Clone**:
+### 1. Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/shanekizito/Thinkly
+cd thinkly
+
+# Install dependencies
+npm install
+```
+
+### 2. Environment Configuration
+
+The app relies on several external services. You need to configure environment variables to run the app.
+
+1.  **Rename the environment file**:
     ```bash
-    git clone https://github.com/shanekizito/Thinkly
-    cd thinkly
+    cp .env.example .env
     ```
 
-2.  **Install**:
-    ```bash
-    npm install
-    ```
+2.  **Obtain API Keys**:
 
-3.  **Configure**:
-    - Rename `.env.example` to `.env`.
-    - Populate Firebase and OpenAI credentials.
+    **Firebase (Auth & Firestore)**
+    - Go to the [Firebase Console](https://console.firebase.google.com/).
+    - Create a new project or select an existing one.
+    - Navigate to **Project Settings > General**.
+    - Add an iOS and Android app to get your `google-services.json` and `GoogleService-Info.plist`. Place these in the root directory.
+    - Under the **SDK Setup and Configuration** section, copy the configuration values:
+        - `EXPO_PUBLIC_API_KEY`: ApiKey
+        - `EXPO_PUBLIC_AUTH_DOMAIN`: AuthDomain
+        - `EXPO_PUBLIC_PROJECT_ID`: ProjectId
+        - `EXPO_PUBLIC_STORAGE_BUCKET`: StorageBucket
+        - `EXPO_PUBLIC_MESSAGING_SENDER_ID`: MessagingSenderId
+        - `EXPO_PUBLIC_APP_ID`: AppId
 
-4.  **Run**:
-    ```bash
-    npx expo start
-    ```
+    **OpenAI (Content Generation)**
+    - Go to [OpenAI Platform](https://platform.openai.com/api-keys).
+    - Create a new API Key.
+    - Set it as `OPENAI_API_KEY`.
+
+    **Google Authentication**
+    - Go to [Google Cloud Console](https://console.cloud.google.com/).
+    - Navigate to **APIs & Services > Credentials**.
+    - Create OAuth 2.0 Client IDs for **Web**, **Android**, and **iOS**.
+    - Populate the following variables:
+        - `EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID`
+        - `EXPO_PUBLIC_GOOGLE_ANDROID_CLIENT_ID`
+        - `EXPO_PUBLIC_GOOGLE_IOS_CLIENT_ID`
+        - `EXPO_PUBLIC_GOOGLE_EXPO_CLIENT_ID` (can use the Web ID for development).
+
+    **Facebook Authentication**
+    - Go to [Meta for Developers](https://developers.facebook.com/).
+    - Create an App and set up **Facebook Login**.
+    - Copy your **App ID** and set it as `EXPO_PUBLIC_FACEBOOK_APP_ID`.
+
+    **Stripe (In-App Purchases)**
+    - Go to the [Stripe Dashboard](https://dashboard.stripe.com/).
+    - Get your **Publishable Key** (begins with `pk_test_` or `pk_live_`).
+    - Set it as `EXPO_PUBLIC_STRIPE_PUBLISHABLE_KEY`.
+
+### 3. Run the App
+
+```bash
+npx expo start
+```
